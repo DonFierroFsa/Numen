@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta es una guía para aprender html">
+    <meta name="keywords" content="html, guía,aprender">
+    <meta name="author" content="Rivira Adrian">
+    <meta name="copyright" content="Copyright © 2023 DonFierroDevs. All Rights Reserved.">
+    <meta name="robots" content=" Esta  no la entendí bien"><!-- ToDo Buscar mas sobre meta robots-->
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4581d1ae12.js" crossorigin="anonymous"></script>
+    <title>Guía HTML</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <figure>
+                <img src="../img/logo HTML.png" alt="logo html">
+                <figcaption>
+                    <h3><i>Hypertext Markup Language</i></h3>
+                </figcaption>
+            </figure>
+            <ul>
+                <li><a href="../index/index.html">Home</a></li>
+                <li><a href="../contact_form/contact.html" target="_blank">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <nav id="nav-aside">
+            <ul>
+                <h3><a href="#Title"> Indice</a></h3>
+
+                <li class="nav-list">
+                    <details>
+                        <summary><span>Conceptos Básicos<i class="fa-solid fa-caret-down"></i></span></summary>
+                        <ul>
+                            <li><a href="#Definicion">Definición</a></li>
+                            <li><a href="#Elemento">Elemento HTML</a></li>
+                            <li><a href="#Atributo">Atributos</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="nav-list">
+                    <details>
+                        <summary><span>Anatomía de un documento HTML<i class="fa-solid fa-caret-down"></i></span>
+                        </summary>
+                        <ul>
+                            <li><a href="#DOCTYPE">DOCTYPE</a></li>
+                            <li><a href="#HTML">HTML</a></li>
+                            <li><a href="#HEAD">HEAD</a></li>
+                            <li><a href="#BODY">BODY</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="nav-list">
+                    <summary>
+                        <a href="#Atajos Emmet"> Atajos Emmet </a>
+                    </summary>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section id="Conceptos basicos">
+            <h2>Conceptos Básicos</h2>
+            <article>
+                <h3 id="Definicion">Definición</h3>
+                <p> <b><i>HTML</b></i>, o <i>Hypertext Markup Language</i>, es un lenguaje de marcado que le dice a los
+                    navegadores web cómo
+                    estructurar las páginas. el HTML consiste en una serie de elementos</p>
+            </article>
+            <hr>
+            <article>
+                <h3 id="Elemento">Elementos HTML</h3>
+                <p>Las partes principales de un elemento son :</p>
+                <ul>
+                    <li>Etiqueta de un elemento</li>
+                    <li>Contenido de un elemento</li>
+                    <li>Etiqueta de cierre</li>
+                </ul>
+                <img src="../img/elemento-html.png" alt="Imagen de un elemento" title="Partes de un elemento HTML"
+                    width="500px">
+            </article>
+            <hr>
+            <article>
+                <h3 id="Atributo">Atributos</h3>
+                <p>Los elementos también pueden tener atributos, estos brindan información extra sobre los elementos</p>
+                <p>Sus principales características son:</p>
+                <ul>
+                    <li>Espacio entre este y el nombre del elemento</li>
+                    <li>Nombre del atributo</li>
+                    <li>valor del atributo, rodeado por comillas</li>
+                </ul>
+                <img src="../img/atributo.png" alt="atributo de un elemento" title="Atributo de un elemento html">
+            </article>
+            <hr>
+            <hr>
+        </section>
+
+        <section id="Anatomia de un HTML">
+            <h2>Anatomía de un documento HTML</h2>
+            <article>
+                <h3 id="DOCTYPE"><code>&lt;!DOCTYPE html&gt;</code></h3>
+                <p>Cuando el HTML llevaba poco tiempo (alrededor de 1991-1992), los <i>doctypes</i> servían como enlaces
+                    al
+                    conjunto de reglas que la página HTML debía seguir para que fuera considerado buen HTML.</p>
+                <p>En la actualidad se ignora y se considera un legado histórico que hay que incluir para que todo
+                    funcione
+                    correctamente <b><code>&lt;!DOCTYPE html&gt;</code></b>.</p>
+            </article>
+            <hr>
+            <article>
+                <h3 id="HTML"><code>&lt;html&gt;&lt;/html&gt;</code></h3>
+                <p>El elemento <b></b><code>&lt;html&gt;&lt;/html&gt;</code> envuelve toda la pagina, y se lo conoce
+                    como
+                    elemento raíz</b></p>
+            </article>
+            <img src="../img/anatomia doc html.png" alt="doc html básico"
+                title="Estructura básica de un documento HTML">
+            <article>
+                <h3 id="HEAD"><code>&lt;head&gt;&lt;/head&gt;</code></h3>
+                <p>Actúa como contenedor de parámetros que no serán visibles en la pagina, como por ejemplo
+                    <i>keywords</i>,
+                    <i>charset</i>, etc.
+                </p>
+            </article>
+            <hr>
+            <article>
+                <h3 id="BODY"><code>&lt;body&gt;&lt;/body&gt;</code></h3>
+                <p>Contiene todo lo que quieras mostrar a los usuarios, textos, imágenes, etc.</p>
+            </article>
+            <hr>
+            <hr>
+        </section>
+
+        <section id="Atajos Emmet">
+            <article>
+                <table border="10px ">
+                    <thead>
+                        <tr>
+                            <th colspan="4">
+                                <h2>Atajos Emmet</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Explicación</td>
+                            <th>Resultado</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>html</th>
+                            <td>Crea rápidamente una plantilla HTML, simplemente escriba ! </td>
+                            <td><img src="../img/!Emmet.png" alt="! Emmet" width="800px"></td>
+                        </tr>
+                        <tr>
+                            <th>Clases</th>
+                            <td>Para definir una clase junto con la etiqueta, simplemente agréguela así:</td>
+                            <td><img src="../img/emmet clases.png" alt="emmet clases"></td>
+                        </tr>
+                        <tr>
+                            <th>Hnos e Hijos</th>
+                            <td>podemos especificar etiquetas hermanos e hijos usando los caracteres + y >.</td>
+                            <td><img src="../img/hermanos e hijos emmet.png" alt="hnos hijos emmet"></td>
+                        </tr>
+                        <tr>
+                            <th>Multiplicación y $</th>
+                            <td>generar múltiples etiquetas multiplicando (*) y numerando elementos en secuencia usando
+                                un signo de dólar ($).</td>
+                            <td><img src="../img/multiplos y secuencia emmet.png" alt="multiplicando emmet"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>todo junto</th>
+                            <td>Usemos varias cosas que hemos aprendido hasta ahora. Prueba esto:
+                                <mark>ul.mi-lista>lorem10.item-$*5</mark>
+                            </td>
+                            <td><img src="../img/Todo Junto EMmet.png" alt="TodoJunto" width="800px"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
+        <hr>
+        <hr>
+    </main>
+    <footer>
+        <small>Copyright © 2023 DonFierroDevs. All Rights Reserved.</small>
+    </footer>
+</body>
+
+</html>
